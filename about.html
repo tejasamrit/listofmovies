@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+    <title>about page</title>
+
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+    background-color: #116466;
+      }
+      .header {
+        padding: 0 48px;
+        height: 70px;
+        background-color:#0b3e3f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        box-shadow: rgba(32, 32, 32, 0.19) 0px 10px 20px, rgba(36, 36, 36, 0.23) 0px 6px 6px;
+      }
+      
+      .nav-list {
+        display: flex;
+        gap: 48px;
+        list-style: none;
+      }
+      .nav-link:link,
+      .nav-link:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color:white;
+        transition: color 0.2s linear;
+        padding: 6px 12px;
+      }
+      .nav-link:hover,
+      .nav-link:active {
+       background-color:#116466;
+      }
+      .section {
+        padding: 85px 0;
+      }
+      .grid {
+        display: grid;
+        gap: 80px;
+      }
+      .grid-two-column {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .section-hero-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      .hero-top-data {
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .hero-para {
+        margin-top: 12px;
+        /* margin-bottom: 24px; */
+        max-width: 500px;
+        text-align: center;
+      }
+
+      .hero-img {
+        max-width: 80%;
+      }
+      .section-hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        /* background: #80a7ee; */
+        /* background:#0d4c4d; */
+        background:#0b3e3f;
+        /* padding: 10px 20px; */
+        border: none;
+        display: block;
+        text-decoration: none;
+        color:white;
+        font-weight: 600;
+        width: 97px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 9px;
+        height: 37px;
+        transition: all 0.1s linear;
+        margin-top: 15px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      }
+      .btn:hover {
+        width: 90px;
+        height: 35px;
+      }
+      .section-hero-image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+      }
+      .footer{
+        width: 100vw;
+        height: 60px;
+        /* background-color: #80a7ee; */
+        background-color:#0b3e3f;
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: -17px;
+        overflow-x:hidden;
+        color: white;
+
+      }
+      .footer span{
+        color: #000205;
+        font-weight: 700;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      .footer p{
+        font-size: 23px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        overflow-x: hidden;
+     
+
+      }
+
+      .scrollTop-style{
+position: fixed;
+right: 2%;
+bottom: 5%;
+z-index: 1;
+
+      }
+      .scroll-top{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(246, 29, 29);
+        display: inline-block;
+        padding: 12px 12px;
+        border-radius: 50%;
+        color:white;
+        position: relative;
+        animation: water-wave 3s linear infinite;
+        cursor: pointer;
+      }
+
+      /* li.active a{
+        background-color: rgb(247, 9, 9);
+      } */
+      ul li a.active{
+       background-color:#116466;
+      }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2>Tejas Amrit</h2>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li ><a href="/index.html" class="nav-link home-link ">HOME</a></li>
+            <li><a href="/about.html" class="nav-link about-link active">ABOUT</a></li>
+            <li><a href="/skills.html" class="nav-link services-link">SKILLS</a></li>
+            <!-- <li><a href="/project.html" class="nav-link projects-link">PROJECTS</a></li> -->
+            <li><a href="/contact.html" class="nav-link contact-link">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-hero section">
+          <div class="container grid grid-two-column">
+            <div class="section-hero-data">
+              <p class="hero-top-data">HELLO,</p>
+              <h1 class="hero-heading">I'm TEJAS AMRIT</h1>
+              <p class="hero-para">
+                Front-end developer, programmer and an artist.
+              </p>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/tejas-amrit-0104b9227"
+                  target="_blank"
+                  class="btn hireme-btn"
+                  >Hire Me</a>
+              </div>
+            </div>
+  
+            <div class="section-hero-image">
+              <img src="me.jpg" alt="image" class="hero-img" />
+            </div>
+          </div>
+        </section>
+      </main>
+  
+
+
+
+
+
+
+
+
+
+
+
+      <div class="footer">
+        <p> Created By <span>  Tejas Amrit </span> |  2022 All rights reserved. </p> 
+    </div>
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  
+    <script type="text/javascript">
+      $(document).on('click','ul li a',function(){
+          $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script> -->
+
+    <script>
+        navbar=document.querySelector(".navbar").querySelectorAll("a");
+        console.log(navbar);
+    
+        navbar.forEach(element =>{
+            element.addEventListener("click",function(){
+                navbar.forEach(nav=>nav.classList.remove("active"))
+    
+                this.classList.add("active");
+            })
+        })
+      </script>
+</body>
+</html>

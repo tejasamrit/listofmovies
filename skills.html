@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+
+    <title>skills page</title>
+
+    <style>
+
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+    background-color: #116466;
+      }
+      .header {
+        padding: 0 48px;
+        height: 70px;
+        background-color:#0b3e3f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        box-shadow: rgba(32, 32, 32, 0.19) 0px 10px 20px, rgba(36, 36, 36, 0.23) 0px 6px 6px;
+      }
+      
+      .nav-list {
+        display: flex;
+        gap: 48px;
+        list-style: none;
+      }
+      .nav-link:link,
+      .nav-link:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color:white;
+        transition: color 0.2s linear;
+        padding: 6px 12px;
+      }
+      .nav-link:hover,
+      .nav-link:active {
+       background-color:#116466;
+      }
+
+
+      .skills{
+        width: 100%;
+        height: 500px;
+        /* background-color: antiquewhite; */
+        padding: 40px 80px;
+      }
+      .skills h1{
+        text-align: center;
+        /* text-decoration: underline; */
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        display:inline-block;
+        /* margin-bottom: 25px; */
+        justify-content:center;
+         /* background-color:#0d4c4d; */
+         background-color:#0b3e3f;
+         color: white;
+         margin-top: 75px;
+         /* color: black; */
+        margin-left:453px;
+        padding: 12px;
+        width: 180px;
+    
+
+      }
+      .left1{
+        max-width: 500px;
+        height: 350px;
+        display: flex;
+        /* background-color: rgb(194, 136, 248); */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        padding: 15px;
+      }
+      
+      .left1 h2{
+        margin-bottom: 20px;
+        text-decoration: underline;
+        font-size: 30px;
+        /* text-decoration: dotted underline black 3px; */
+
+        
+      }
+      .left1 p{
+        font-size: 20px;
+      }
+       .btn1{
+        margin-top: 20px;
+width: 210px;
+/* background-color: #80a7ee; */
+background-color:#0b3e3f;
+padding: 9px 15px;
+text-decoration: none;
+font-size: 23px;
+border: none;
+outline: none;
+color: white;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+      }
+      .container2{
+            width:500px;
+            height:352px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #302f2f; */
+
+        }
+        .skillss h2{
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-top: 35px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color:white;
+            /* color: black; */
+        }
+        .bar{
+            background:white;
+            width: 450px;
+            height: 10px;
+            border-radius: 5px;
+        }
+        .bar div{
+            height: 10px;
+            width: 0;
+            /* background-color: red;s */
+            border-radius: 5px;
+        }
+        .bar div span{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background:#023a3b;
+            float: right;
+            margin-top: -15px;
+            margin-right: -20px;
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .html{
+            /* background-color: rgb(249, 24, 249); */
+            background-color:black;
+            animation: html 1.5s linear forwards;
+        }
+        .css{
+            /* background-color: rgb(237, 244, 23); */
+            background-color: black;
+            animation: css 1.5s linear forwards;
+        }
+        .javascript{
+            /* background-color: rgb(17, 252, 182); */
+            background-color:black;
+            animation: javascript 1.5s linear forwards;
+        }
+        .python{
+            /* background-color: rgb(97, 28, 246); */
+            background-color: black;
+            animation: python 1.5s linear forwards;
+        }
+        .html span{
+            border: 2px solid black;
+        }
+        .python span{
+            border: 2px solid black;
+        }
+        .javascript span{
+            border: 2px solid black;
+        }
+        .css span{
+            border: 2px solid black;
+        }
+        @keyframes html{
+            100%{
+                width: 86%;
+            }
+        }        @keyframes css{
+            100%{
+                width: 77%;
+            }
+        }        @keyframes javascript{
+            100%{
+                width: 51%;
+            }
+        }        @keyframes python{
+            100%{
+                width: 64%;
+            }
+        }
+
+
+ .footer{
+        width: 100vw;
+        height: 60px;
+        /* background-color: #80a7ee; */
+        background-color:#0b3e3f;
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: -97px;
+        overflow-x:hidden;
+        color: white;
+
+      }
+      .footer span{
+        color: #000205;
+        font-weight: 700;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      .footer p{
+        font-size: 23px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        overflow-x: hidden;
+     
+
+      }
+
+      .scrollTop-style{
+position: fixed;
+right: 2%;
+bottom: 5%;
+z-index: 1;
+
+      }
+      .scroll-top{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(246, 29, 29);
+        display: inline-block;
+        padding: 12px 12px;
+        border-radius: 50%;
+        color:white;
+        position: relative;
+        animation: water-wave 3s linear infinite;
+        cursor: pointer;
+      }
+
+      /* li.active a{
+        background-color: rgb(247, 9, 9);
+      } */
+
+      ul li a.active{
+       background-color: #116466;
+      }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2>Tejas Amrit</h2>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li ><a href="/index.html" class="nav-link home-link ">HOME</a></li>
+            <li><a href="/about.html" class="nav-link about-link">ABOUT</a></li>
+            <li><a href="/skills.html" class="nav-link services-link active">SKILLS</a></li>
+            <!-- <li><a href="/project.html" class="nav-link projects-link">PROJECTS</a></li> -->
+            <li><a href="/contact.html" class="nav-link contact-link">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+      <div class="skills">
+        <h1>My skills</h1><br>
+      <div class="left1">
+        <h2>Experience</h2>
+       
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          sed, Numquam aliquam ipsum voluptates praesentium
+          explicabo, ut dolores nisi cupiditate dolorum adipisci id libero earum
+          quaerat et quasi?
+        </p>
+        <a href="me.jpg" target="_blank" class="btn1">DOWNLOAD CV</a>
+    </div>
+      
+        <div class="container2">
+            <div class="skillss">
+                <h2>HTML</h2>
+                <div class="bar">
+                    <div class="html"><span>86%</span></div>
+                </div>
+                <div class="skillss">
+                    <h2>PYTHON</h2>
+                    <div class="bar">
+                        <div class="python"><span>64%</span></div>
+                    </div>
+                    <div class="skillss">
+                        <h2>JAVASCRIPT</h2>
+                        <div class="bar">
+                            <div class="javascript"><span>51%</span></div>
+                        </div>
+                        <div class="skillss">
+                            <h2>CSS</h2>
+                            <div class="bar">
+                                <div class="css"><span>77%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+      <div class="footer">
+        <p> Created By <span>  Tejas Amrit </span> |  2022 All rights reserved. </p> 
+    </div>
+
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <script type="text/javascript">
+    $(document).on('click','ul li',function(){
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+  </script> -->
+
+  <script>
+    navbar=document.querySelector(".navbar").querySelectorAll("a");
+    console.log(navbar);
+
+    navbar.forEach(element =>{
+        element.addEventListener("click",function(){
+            navbar.forEach(nav=>nav.classList.remove("active"))
+
+            this.classList.add("active");
+        })
+    })
+  </script>
+</body>
+</html>
